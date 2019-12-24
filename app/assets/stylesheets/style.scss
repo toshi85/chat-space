@@ -22,14 +22,6 @@ html, body {
   float: left;
 }
 
-.edit-icon{
-  color: white;
-}
-
-.cog-icon{
-  color: white;
-}
-
 chat-side .side-header {
   background-color: #253141;
   height: 100vh;
@@ -37,6 +29,14 @@ chat-side .side-header {
   display: flex;
   align-items: center;
   margin-right: 0;
+}
+
+.edit-icon{
+  color: white;
+}
+
+.cog-icon{
+  color: white;
 }
 
 .chat-side {
@@ -59,8 +59,6 @@ chat-side .side-header {
     }
   }
 
-  
-
   .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
@@ -68,6 +66,7 @@ chat-side .side-header {
 
     .group {
       margin-bottom: 40px;
+
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
@@ -96,7 +95,11 @@ chat-side .side-header {
     overflow: scroll;
     padding: 0 40px;
 
-    .main-header__edit-btn {
+    &__left-box {
+      margin-top: 35px;
+    }
+  
+    &__edit-btn {
       height: 40px;
       line-height: 40px;
       padding: 0 20px;
@@ -105,10 +108,6 @@ chat-side .side-header {
       color: #38aef0;
       position: absolute;
       right: 40px;
-    }
-  
-    &__left-box {
-      margin-top: 35px;
     }
   
     &__left-box__current-group {
@@ -134,28 +133,24 @@ chat-side .side-header {
 
     .message {
       padding-bottom: 40px;
+    }
 
-      &__upper-info {
-        display: flex;
-        margin-bottom: 10px;
-      }
-  
-      &__upper-info__talker {
+    .message__upper-info {
+      display: flex;
+      margin-bottom: 10px;
+
+      &__talker {
         color: #434a54;
         font-size: 16px;
         font-weight: bold;
       }
   
-      
-  
-      &__upper-info__date {
+      &__date {
         color: #999999;
         font-size: 12px;
         margin-left: 10px;
       }
     }
-
-    
   }
 
   .form {
@@ -185,6 +180,10 @@ chat-side .side-header {
           right: 10px;
           cursor: pointer;
         }
+
+        &__image__file {
+          display: none;
+        }
       }
 
       .submit-btn {
@@ -195,17 +194,7 @@ chat-side .side-header {
         background-color: #38aef0;
         color: white;
         cursor: pointer;
-      }
-
-      
+      }  
     }
   }
-}
-
-.fa-photo:before, .fa-image:before, .fa-picture-o:before {
-  content: "\f03e";
-}
-
-.chat-main .form form .input-box__image__file {
-  display: none;
 }
