@@ -1,0 +1,18 @@
+.side-bar
+.flash-box
+.wapper
+  .chat-side
+    .side-header
+      .side-header__box
+        %p.side-header__box__user-name toshi
+        %ul.side-header__box__menu
+          %li.side-header__box__menu__new-group
+            = link_to "#", class:"contents__btn" do
+              %i.fas.fa-edit.edit-icon
+          %li.side-header__box__menu__edit-group
+            = link_to "#", class:"contents__btn" do
+              %i.fas.fa-cog.cog-icon
+    .groups
+      .group
+        %p.group__group-name sss
+        %p.group__latest-message メッセージがありません
