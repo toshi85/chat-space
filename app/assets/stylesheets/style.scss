@@ -67,6 +67,10 @@ chat-side .side-header {
     .group {
       margin-bottom: 40px;
 
+      &__name{
+        color: white;
+      }
+
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
@@ -164,29 +168,34 @@ chat-side .side-header {
       .input-box {
         position: relative;
         width: 100%;
+    }
 
-        &__text {
-          height: 50px;
+      .form__message{
+        height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
           color: #434a54;
           border-style: none;
-        }
-  
-        &__image {
-          font-size: 1.3rem;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          cursor: pointer;
-        }
+          position: relative;
 
-        &__image__file {
-          display: none;
-        }
       }
 
-      .submit-btn {
+      .form__mask__image{
+        font-size: 1.3rem;
+        position: absolute;
+        top: 705px;
+        right: 170px;
+        cursor: pointer;
+      }
+
+      
+
+
+      .fas fa-image icon{
+        display: none;
+      }
+
+      .form__submit{
         width: 100px;
         height: 50px;
         padding: 0 30px;
@@ -194,7 +203,62 @@ chat-side .side-header {
         background-color: #38aef0;
         color: white;
         cursor: pointer;
-      }  
+      }
+
+      .hidden{
+        display: none;
+      }
+
+      //   &__text {
+      //     height: 50px;
+      //     width: 100%;
+      //     padding: 0 40px 0 10px;
+      //     color: #434a54;
+      //     border-style: none;
+      //   }
+  
+
+      // 完了　&__image →.form__mask__image
+      //   &__image {
+      //     font-size: 1.3rem;
+      //     position: absolute;
+      //     top: 10px;
+      //     right: 10px;
+      //     cursor: pointer;
+      //   }
+
+
+      // 完了　&__image__file→.fas fa-image icon
+      //   &__image__file {
+      //     display: none;
+      //   }
+      // }
+
+
+      // 完了　.submit-btn→.form__submit
+
+      // 完了
+      // .submit-btn {
+      //   width: 100px;
+      //   height: 50px;
+      //   padding: 0 30px;
+      //   margin-left: 15px;
+      //   background-color: #38aef0;
+      //   color: white;
+      //   cursor: pointer;
+      // }  
+
+      
+
+      // .form__submit{
+      //   width: 100px;
+      //   height: 50px;
+      //   padding: 0 30px;
+      //   margin-left: 15px;
+      //   background-color: #38aef0;
+      //   color: white;
+      //   cursor: pointer;
+      // }
     }
   }
 }
