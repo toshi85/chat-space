@@ -1,21 +1,9 @@
-<<<<<<< Updated upstream
-@import "_reset.scss";
-@import "config/colors";
-@import "modules/flash";
-@import "modules/group";
-@import "modules/user";
-@import "_messages.scss";
-@import "style.scss";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-=======
 @import "./reset";
 @import "config/colors";
 @import "./messages";
 @import "style.scss";
+@import "group.scss";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "modules/user";
 @import "modules/flash";
-
->>>>>>> Stashed changes
