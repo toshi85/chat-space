@@ -8,6 +8,10 @@ html, body {
   box-sizing: border-box;
 }
 
+div{
+  display: block;
+}
+
 .flash-box {
   color: white;
   font-size: 1rem;
@@ -63,6 +67,7 @@ chat-side .side-header {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
+    overflow: scroll;
 
     .group {
       margin-bottom: 40px;
@@ -80,15 +85,14 @@ chat-side .side-header {
       &__latest-message {
         font-size: 11px;
         color: #ffff;
-      }
-    }
-
-    
-  }
+     }
+   }
+ }
 }
 
 .chat-main {
   width: calc(100vw - 300px);
+  height: calc(100vh - 190px);
   float: left;
 
   .main-header {
@@ -97,7 +101,7 @@ chat-side .side-header {
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     overflow: scroll;
-    padding: 0 40px;
+    padding: 0 40px;  
 
     &__left-box {
       margin-top: 35px;
@@ -127,10 +131,13 @@ chat-side .side-header {
     }
   }
 
-  
+  .new_message{
+    position: relative;
+  }
 
   .messages {
     height: calc(100vh - 190px);
+    // height: 100px;
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
@@ -156,17 +163,18 @@ chat-side .side-header {
       }
     }
   }
+}
 
   .form {
     height: 90px;
     padding: 20px 40px;
     background-color: #ddd;
 
+
     form {
       display: flex;
 
       .input-box {
-        position: relative;
         width: 100%;
     }
 
@@ -176,20 +184,17 @@ chat-side .side-header {
           padding: 0 40px 0 10px;
           color: #434a54;
           border-style: none;
-          position: relative;
-
       }
 
-      .form__mask__image{
+      .form__mask{
         font-size: 1.3rem;
         position: absolute;
-        top: 704px;
-        right: 170px;
+        top: 10px;
+        right: 130px;
         cursor: pointer;
       }
-
-      
-
+    }
+  }
 
       .fas fa-image icon{
         display: none;
@@ -259,6 +264,6 @@ chat-side .side-header {
       //   color: white;
       //   cursor: pointer;
       // }
-    }
-  }
-}
+//     }
+//   }
+// }
