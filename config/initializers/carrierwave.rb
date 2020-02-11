@@ -12,7 +12,7 @@ CarrierWave.configure do |config|
     region: 'ap-northeast-1'
   }
 
-  config.fog_directory  = 'tosimasa'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tosimasa'
+  config.fog_directory  = 'tosimasa2'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/tosimasa2'
 
 end
