@@ -96,6 +96,7 @@ $(function(){
        return html;
      };
    }
+
   $('#new_message').on('submit', function(e){
    e.preventDefault();
    var formData = new FormData(this);
@@ -119,6 +120,7 @@ $(function(){
       alert("メッセージ送信に失敗しました");
   });
   })
+  
   });
   
   last_message_id = $('.message:last').data("message-id");
@@ -152,6 +154,8 @@ $(function(){
       alert('error');
     });
   };
-  setInterval(reloadMessages, 7000);
+  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
+    setInterval(reloadMessages, 7000);
+  }
 });
 
