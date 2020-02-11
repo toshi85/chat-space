@@ -4,11 +4,11 @@ $(function(){
     if (message.content && message.image) {
       //data-idが反映されるようにしている
       var html = `<div class="message" data-message-id= ${message.id} >
-        <div class="upper-message">
-          <div class="upper-message__user-name">
+        <div class="message__upper-info">
+          <div class="message__upper-info__talker">
           ${message.user_name}
           </div>
-          <div class="upper-message__date">
+          <div class="message__upper-info__date">
           ${message.created_at}
           </div>
         </div>
@@ -22,11 +22,11 @@ $(function(){
     } else if (message.content) {
       //同様に、data-idが反映されるようにしている
       var html = `<div class="message" data-message-id= ${message.id} >
-        <div class="upper-message">
-          <div class="upper-message__user-name">
+        <div class="message__upper-info">
+          <div class="message__upper-info__talker">
           ${message.user_name}
           </div>
-          <div class="upper-message__date">
+          <div class="message__upper-info__date">
           ${message.created_at}
           </div>
         </div>
@@ -39,11 +39,11 @@ $(function(){
     } else if (message.image) {
       //同様に、data-idが反映されるようにしている
       var html = `<div class="message" data-message-id= ${message.id} >
-        <div class="upper-message">
-          <div class="upper-message__user-name">
+        <div class="message__upper-info">
+          <div class="message__upper-info__talker">
           ${message.user_name}
           </div>
-          <div class="upper-message__date">
+          <div class="message__upper-info__date">
           ${message.created_at}
           </div>
         </div>
@@ -60,11 +60,11 @@ $(function(){
      if ( message.image ) {
        var html =
         `<div class="message" data-message-id=${message.id}>
-           <div class="upper-message">
-             <div class="upper-message__user-name">
+           <div class="message__upper-info">
+             <div class="message__upper-info__talker">
                ${message.user_name}
              </div>
-             <div class="upper-message__date">
+             <div class="message__upper-info__date">
                ${message.created_at}
              </div>
            </div>
@@ -79,11 +79,11 @@ $(function(){
      } else {
        var html =
         `<div class="message" data-message-id=${message.id}>
-           <div class="upper-message">
-             <div class="upper-message__user-name">
+           <div class="message__upper-info">
+             <div class="message__upper-info__talker">
                ${message.user_name}
              </div>
-             <div class="upper-message__date">
+             <div class="message__upper-info__date">
                ${message.created_at.strftime("%Y年%m月%d日 %H時%M分")}
              </div>
            </div>
